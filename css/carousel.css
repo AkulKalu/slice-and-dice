@@ -1,0 +1,110 @@
+.carousel {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.arrow-svg {
+    height: 5vh;
+    fill: var(--fontWhite);
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.arrow-svg:hover {
+    opacity: 1;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+.car-content {
+    width: 80%;
+}
+
+.car-arrow-l, .car-arrow-r{
+    width: 10%;
+    
+}
+
+.car-slide {
+    display: none;
+    transition: opacity 1s;
+    font-weight: 200;
+    font-size: 5vh;
+    text-align: center;
+    animation: fadeIn 1s ease-out both;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.car-slide p {
+    padding: 1.5vh 0;
+}
+
+.car-toogle {
+    background: var(--fontWhite);
+    height: 1.5vh;
+    width: 1.5vh;
+    margin:5vh 0.6vh;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.car-toogle:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    .car-slide {
+        font-size: 1.8rem;
+    }
+    .car-content {
+        width: 100%;
+    }
+
+    .car-arrow-l, .car-arrow-r {
+        display: none;
+    }
+    .car-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .car-toogle {
+        height: 2.2vh;
+        width: 2.2vh;
+        margin:5vh 1.5vh;
+    } 
+}
+
+@media only screen and (max-height: 400px) {
+    .car-slide {
+        font-size: 1.8rem;
+    }
+    .car-content {
+        width: 100%;
+    }
+
+    .car-arrow-l, .car-arrow-r {
+        display: none;
+    }
+    .car-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .car-toogle {
+        height: 2.2vh;
+        width: 2.2vh;
+        margin:5vh 1.5vh;
+    } 
+}
+

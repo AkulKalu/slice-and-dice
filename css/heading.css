@@ -1,0 +1,118 @@
+@import './carousel.css';
+
+
+.heading {
+    background-image: url('../img/background/home.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--fontWhite); 
+}
+.cont-head {
+    width: 75%;
+    margin: auto;
+   
+}
+
+.head-top {
+    height: 10%;
+}
+.head-bottom {
+    height: 90%;
+}
+
+
+
+.title {
+    justify-content: flex-start;
+    font-size: var(--font-l);
+}
+
+.nav-el {
+    padding: 0 4vh;
+}
+
+.link {
+    position: relative;
+    font-size: var(--font-s);
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: var(--fontWhite);
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+}
+@media only screen and (max-width: 600px) {
+    .cont-head {
+        width: 100%;
+       
+    }
+    .title {
+        width: 100%;
+        padding: 0.2rem 1rem;
+        background:var(--blueGreen);
+        
+    }
+    .nav-li {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav {
+        width: 100%;
+        overflow: hidden;
+        height: 0;
+        justify-content: center;
+        background: rgb(3, 73, 100);
+        transition: all 0.2s;
+    }
+    .nav-open {
+        height: 30vh!important;
+    }
+
+    .head-top {
+        width: 100%;
+        height: unset;
+        top: 0;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+    }
+    .link {
+        position: relative;
+        font-size: 1rem;
+    }
+    .nav-el {
+        padding: 8px 0;
+    }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 600px) and (orientation: portrait) {
+    .head-top {
+        flex-direction: column;
+    }
+    .title {
+        padding: 2rem 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .nav {
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media only screen and (max-height: 500px) {
+    .link {
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,53 @@
+@import './common.css';
+@import './heading.css';
+@import './about.css';
+
+:root {
+    --fontWhite : #FEFAF9;
+    --greenLight : #17DAA2;
+    --blueGreen : #00B6CB;
+    --lightGray : #EEEFF1;
+    --font-sm : 2vh;
+    --font-s : 1.6vh;
+    --font-xl : 5vh;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    background: var(--greenLight);
+    border:  1px solid rgb(34, 122, 81);
+    color: var(--fontWhite);
+    font-size: var(--font-s);
+    text-align: center;
+    border-radius: 20px;
+    padding: 1.2vh 0;
+    width: 18vh;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: crimson;
+}
+.btn-blue {
+    border: none;
+    background: var(--blueGreen);
+}
+
+
+

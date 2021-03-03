@@ -1,0 +1,61 @@
+.full {
+    height: 100vh;
+}
+.flex {
+    display: flex;
+}
+.flex-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.flex-start {
+    justify-content: flex-start;
+}
+.col {
+    flex-direction: column;
+}
+/* font */
+.font-sm {
+    font-size: var(--font-sm);
+}
+.font-s {
+    font-size: var(--font-s);
+}
+.font-xl {
+    font-size: var(--font-xl);
+}
+
+.bold {
+    font-weight: 700;
+}
+.font-light {
+    font-weight: 200;
+}
+/*  */
+
+
+.w-50 {
+    width: 50%;
+} 
+.w-100 {
+    width: 100%;
+}
+.h-25 {
+    height: 25%;
+}
+.h-50 {
+    height: 50%;
+} 
+.h-100 {
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .font-sm {
+        font-size: 0.8rem;
+    }
+}
