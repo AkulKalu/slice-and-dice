@@ -1,18 +1,27 @@
 @import './common.css';
 @import './heading.css';
 @import './about.css';
+@import './sections.css';
+
+@font-face {
+    font-family: "Proxima-Nova";
+    src: url('../fonts/ProximaNova-Regular.otf');
+}
 
 :root {
     --fontWhite : #FEFAF9;
+    --fontGray : gray;
+    --fontDark : #525151;
     --greenLight : #17DAA2;
     --blueGreen : #00B6CB;
     --lightGray : #EEEFF1;
     --font-sm : 2vh;
     --font-s : 1.6vh;
+    --font-l : 3vh;
     --font-xl : 5vh;
+    --bgWhite : #FFFFFF;
+    --bgLightGray: #FAFBFD;
 }
-
-
 
 * {
     margin: 0;
@@ -28,26 +37,19 @@ ul {
 
 body {
     font-family: 'Raleway', sans-serif;
+    color: var(--fontGray);
+    text-align: center;
 }
 
-.btn {
-    background: var(--greenLight);
-    border:  1px solid rgb(34, 122, 81);
-    color: var(--fontWhite);
-    font-size: var(--font-s);
-    text-align: center;
-    border-radius: 20px;
-    padding: 1.2vh 0;
-    width: 18vh;
-    transition: background 0.3s;
+h2, h3 {
+    color: var(--fontDark);
 }
-.btn:hover {
-    background: crimson;
+
+p {
+    line-height: 3vh;
+    margin: 3vh 0;
 }
-.btn-blue {
-    border: none;
-    background: var(--blueGreen);
-}
+
 
 
 

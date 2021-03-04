@@ -1,0 +1,46 @@
+.section-text {
+    text-align: left;
+}
+
+.sections {
+    height: 130vh;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .sections {
+        height: 100%;
+    }
+
+    .section {
+        flex-direction: column;
+        padding: 6vh 0;
+    }
+
+    .section-mob {
+        flex-direction: column-reverse;
+    }
+
+    .section-text {
+       width: 100%;
+       justify-content: center;
+    }
+
+    .section-img {
+        height: 30vh;
+        margin: auto;
+    }
+    .btn {
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 600px) and (orientation: portrait ) {
+  
+    .section-img {
+        margin-top: 25%;
+        height: 50%;
+    }
+}
+
+
+
